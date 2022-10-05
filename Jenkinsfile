@@ -31,6 +31,7 @@ pipeline {
       sh 'ls -al'
       sh './gradlew clean'
     }
+  }
     
  post {
     always {
