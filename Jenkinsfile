@@ -27,9 +27,11 @@ pipeline {
     }
     
    stage('Clean Build') {
-      sh "pwd"
-      sh 'ls -al'
-      sh './gradlew clean'
+      steps{
+        sh "pwd"
+        sh 'ls -al'
+        sh './gradlew clean'
+      }
     }
   }
     
