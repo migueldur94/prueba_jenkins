@@ -2,9 +2,6 @@ pipeline {
   agent {
     label 'android'
   }
-  tools {
-    jdk 'JDK8_Centos'
-  }
   
   stages{
     stage('Checkout') {
